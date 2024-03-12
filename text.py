@@ -6,15 +6,16 @@ sentence: The input sentence with the adjective.
 index: The index of the adjective in the sentence. 
 
 The function returns the sentence with adjective replaced by a verb at the specified index. 
-The 'en' suffix is added to adjective to convert it into a verb. 
+The 'en' suffix is added to adjective to convert it into a verb.
+ 
 Prints the new sentence with the verb. 
 """
 
 def adjective_to_verb(sentence, index): 
-    new_word = ""
-    for word_ in sentence.split(" ")[index]: 
-        if word_.isalpha(): 
-            new_word += word_
-    return new_word + "en"
+    new_sentence = ""
+    for word in sentence.split(" ")[index]: 
+        if word.isalpha(): 
+            new_sentence += word
+    return new_sentence + "en"
 print(adjective_to_verb('I need to make that bright.', -1))
 print(adjective_to_verb('It got dark as the sun set.', 2))
