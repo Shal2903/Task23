@@ -19,3 +19,9 @@ def adjective_to_verb(sentence, index):
     return new_sentence + "en"
 print(adjective_to_verb('I need to make that bright.', -1))
 print(adjective_to_verb('It got dark as the sun set.', 2))
+
+def add_prexfix(word):
+    word = word + "un"
+    return word
+print (f" Prefix added to word: {add_prexfix("happy")}")
+print (f" Prefix added to word: {add_prexfix("wanted")}")
